@@ -32,6 +32,7 @@ keepsakes/*
 tkz-graph.sty
 html/*
 /result
+/build
 
 flowchart-only.pdf
 flowchart.png

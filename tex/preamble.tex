@@ -27,6 +27,8 @@
 \usepackage{prerex}
 \usepackage[nameinlink]{cleveref}
 \usepackage{derivative}
+\usepackage[turkish]{babel}
+\usepackage{csquotes}
 
 %%fakesection evan.sty macros
 %Small commands
@@ -221,15 +223,15 @@
 	}
 }
 
-\declaretheorem[style=thmtheorem,name=Theorem,numberwithin=section]{theorem}
+\declaretheorem[style=thmtheorem,name=Teorem,numberwithin=section]{theorem}
 \tcolorboxenvironment{theorem}{theorem box}
 \declaretheorem[style=thmtheorem,name=Lemma,sibling=theorem]{lemma}
 \tcolorboxenvironment{lemma}{theorem box}
-\declaretheorem[style=thmtheorem,name=Proposition,sibling=theorem]{proposition}
+\declaretheorem[style=thmtheorem,name=Önerme,sibling=theorem]{proposition}
 \tcolorboxenvironment{proposition}{theorem box}
-\declaretheorem[style=thmtheorem,name=Corollary,sibling=theorem]{corollary}
+\declaretheorem[style=thmtheorem,name=Sonuç,sibling=theorem]{corollary}
 \tcolorboxenvironment{corollary}{theorem box}
-\declaretheorem[style=thmexample,name=Example,sibling=theorem]{example}
+\declaretheorem[style=thmexample,name=Örnek,sibling=theorem]{example}
 \tcolorboxenvironment{example}{example box}
 
 \declaretheoremstyle[
@@ -260,10 +262,10 @@
 \tcolorboxenvironment{step}{remark box}
 
 \theoremstyle{definition}
-\newtheorem{claim}[theorem]{Claim}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{fact}[theorem]{Fact}
-\newtheorem{abuse}[theorem]{Abuse of Notation}
+\newtheorem{claim}[theorem]{İddia}
+\newtheorem{definition}[theorem]{Tanım}
+\newtheorem{fact}[theorem]{Lemma}
+\newtheorem{abuse}[theorem]{Notasyon Tuhaflığı}
 
 \newtheorem{problem}{Problem}[chapter]
 \renewcommand{\theproblem}{\thechapter\Alph{problem}}
